@@ -18,9 +18,15 @@ from .. import timeutils
 from ..config import Config
 from ..models import Event, SourceStats
 
+# Les champs entre guillemets peuvent contenir des guillemets internes échappés
+# (`\"`), comme le permet le format combined d'Apache. Le motif `(?:[^"\\]|\\.)*`
+# accepte ces échappements au lieu de s'arrêter au premier guillemet, ce qui
+# évite de rejeter à tort une ligne valide (et empêche un attaquant de masquer sa
+# requête via un User-Agent ou un Referer piégé).
+_QUOTED = r'(?:[^"\\]|\\.)*'
 _COMBINED = re.compile(
-    r'^(?P<ip>\S+) \S+ \S+ \[(?P<date>[^\]]+)\] "(?P<request>[^"]*)" '
-    r'(?P<status>\d{3}) (?P<bytes>\d+|-) "(?P<referer>[^"]*)" "(?P<ua>[^"]*)"$'
+    rf'^(?P<ip>\S+) \S+ \S+ \[(?P<date>[^\]]+)\] "(?P<request>{_QUOTED})" '
+    rf'(?P<status>\d{{3}}) (?P<bytes>\d+|-) "(?P<referer>{_QUOTED})" "(?P<ua>{_QUOTED})"$'
 )
 
 

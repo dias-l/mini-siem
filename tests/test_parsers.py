@@ -96,3 +96,17 @@ def test_url_kept_encoded(config):
     """L'URL est conservée telle quelle (non décodée à ce stade)."""
     events, _ = apache.parse(config.path("logs_dir") / "apache_access.log", config)
     assert all(e.url is not None for e in events)
+
+
+def test_apache_escaped_quotes_in_user_agent(config, tmp_path):
+    """Une ligne combined valide dont le User-Agent contient un guillemet
+    échappé (\\") doit être analysée, pas comptée comme corrompue."""
+    log = tmp_path / "ua.log"
+    log.write_text(
+        r'10.0.1.25 - - [12/Oct/2026:15:21:33 +0200] "GET /x HTTP/1.1" '
+        r'200 5 "-" "Mozilla/5.0 (compatible; \"bot\")"' + "\n",
+        encoding="utf-8",
+    )
+    events, stats = apache.parse(log, config)
+    assert stats.events == 1 and stats.corrupted == 0
+    assert events[0].http_method == "GET" and events[0].url == "/x"
