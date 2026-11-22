@@ -1,0 +1,64 @@
+# ==========================================================================
+#  Configuration du mini-SIEM
+#  NF2 : aucune valeur de seuil / fenêtre / signature / whitelist n'est
+#  écrite en dur dans le code — tout est centralisé ici.
+# ==========================================================================
+
+# --- Chemins (relatifs à la racine du projet) -----------------------------
+paths:
+  logs_dir: data/logs
+  threat_intel: data/threat_intel/malicious_ips.csv
+  database: siem.db
+  output: output/alertes.json
+
+# --- Options d'analyse des sources ----------------------------------------
+parsing:
+  auth_log:
+    year: 2026                 # auth.log ne contient pas l'année
+    timezone_offset_hours: 2   # heure locale du serveur = UTC+02:00
+
+# --- Liste blanche (F5) ----------------------------------------------------
+# IP ignorées par TOUTES les règles. 10.0.1.5 = scanner interne sécurité.
+whitelist:
+  - 10.0.1.5
+
+# --- Règles de détection à fenêtre glissante (F6) -------------------------
+rules:
+  R1:                          # Force brute SSH
+    threshold: 5               # >= 5 ssh_failed
+    window_seconds: 60         # dans une fenêtre de 60 s
+  R2:                          # Scan de ports
+    distinct_ports: 15         # >= 15 ports distincts en firewall_deny
+    window_seconds: 60
+  R4:                          # Scan web
+    threshold: 20              # >= 20 réponses HTTP 404
+    window_seconds: 60
+
+# --- Règles de corrélation (F7) -------------------------------------------
+correlation:
+  C1:                          # Compromission probable (ssh_success après R1)
+    window_after_seconds: 600  # jusqu'à 10 min après la fin de la rafale R1
+  C2:                          # Chaîne d'attaque (R3 après R2)
+    window_after_seconds: 1800 # jusqu'à 30 min après la fin du scan R2
+
+# --- Signatures d'attaque web (R3) ----------------------------------------
+# Expressions régulières appliquées sur l'URL décodée deux fois
+# (urllib.parse.unquote_plus), insensibles à la casse.
+# Les frontières (\s+, =, ...) évitent les faux positifs sur des mots
+# légitimes comme "union", "select" ou "script".
+signatures:
+  sqli:
+    - "union\\s+select"
+    - "\\bor\\b\\s+1\\s*=\\s*1"
+    - "'\\s*or\\s*'"
+    - "drop\\s+table"
+    - "sleep\\s*\\(\\s*\\d+\\s*\\)"
+  path_traversal:
+    - "\\.\\./"
+    - "\\.\\.\\\\"
+    - "/etc/passwd"
+    - "/etc/shadow"
+  xss:
+    - "<script"
+    - "onerror\\s*="
+    - "javascript:"

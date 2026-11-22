@@ -1,0 +1,364 @@
+Oct 12 02:00:00 srv-web01 CRON[1058]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 03:00:00 srv-web01 CRON[1060]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 03:42:18 srv-web01 sshd[1416]: Invalid user oracle from 192.0.2.29 port 54470
+Oct 12 03:42:18 srv-web01 sshd[1416]: Failed password for invalid user oracle from 192.0.2.29 port 54470 ssh2
+Oct 12 03:42:19 srv-web01 sshd[1417]: Connection closed by 192.0.2.29 port 44220 [preauth]
+Oct 12 04:00:00 srv-web01 CRON[1061]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 04:34:28 srv-web01 sshd[1309]: Invalid user pi from 192.0.2.106 port 46334
+Oct 12 04:34:28 srv-web01 sshd[1309]: Failed password for invalid user pi from 192.0.2.106 port 46334 ssh2
+Oct 12 04:34:29 srv-web01 sshd[1315]: Connection closed by 192.0.2.106 port 44484 [preauth]
+Oct 12 05:00:00 srv-web01 CRON[1067]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 05:59:59 srv-web01 sshd[1566]: Invalid user oracle from 198.51.100.213 port 46025
+Oct 12 05:59:59 srv-web01 sshd[1566]: Failed password for invalid user oracle from 198.51.100.213 port 46025 ssh2
+Oct 12 06:00:00 srv-web01 CRON[1073]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 06:00:05 srv-web01 sshd[1568]: Failed password for root from 198.51.100.213 port 34352 ssh2
+Oct 12 06:00:09 srv-web01 sshd[1575]: Invalid user admin from 198.51.100.213 port 32797
+Oct 12 06:00:09 srv-web01 sshd[1575]: Failed password for invalid user admin from 198.51.100.213 port 32797 ssh2
+Oct 12 06:00:11 srv-web01 sshd[1582]: Invalid user admin from 198.51.100.213 port 41318
+Oct 12 06:00:11 srv-web01 sshd[1582]: Failed password for invalid user admin from 198.51.100.213 port 41318 ssh2
+Oct 12 06:00:15 srv-web01 sshd[1587]: Failed password for root from 198.51.100.213 port 30239 ssh2
+Oct 12 06:00:24 srv-web01 sshd[1589]: Failed password for root from 198.51.100.213 port 31544 ssh2
+Oct 12 06:00:27 srv-web01 sshd[1595]: Invalid user oracle from 198.51.100.213 port 43277
+Oct 12 06:00:27 srv-web01 sshd[1595]: Failed password for invalid user oracle from 198.51.100.213 port 43277 ssh2
+Oct 12 06:00:29 srv-web01 sshd[1591]: Invalid user postgres from 198.51.100.213 port 46138
+Oct 12 06:00:29 srv-web01 sshd[1591]: Failed password for invalid user postgres from 198.51.100.213 port 46138 ssh2
+Oct 12 06:00:32 srv-web01 sshd[1617]: Invalid user admin from 198.51.100.213 port 31689
+Oct 12 06:00:32 srv-web01 sshd[1617]: Failed password for invalid user admin from 198.51.100.213 port 31689 ssh2
+Oct 12 06:00:39 srv-web01 sshd[1599]: Invalid user admin from 198.51.100.213 port 53339
+Oct 12 06:00:39 srv-web01 sshd[1599]: Failed password for invalid user admin from 198.51.100.213 port 53339 ssh2
+Oct 12 06:00:47 srv-web01 sshd[1624]: Invalid user postgres from 198.51.100.213 port 41934
+Oct 12 06:00:47 srv-web01 sshd[1624]: Failed password for invalid user postgres from 198.51.100.213 port 41934 ssh2
+Oct 12 06:00:49 srv-web01 sshd[1611]: Failed password for root from 198.51.100.213 port 30732 ssh2
+Oct 12 06:00:50 srv-web01 sshd[1646]: Invalid user oracle from 198.51.100.213 port 59044
+Oct 12 06:00:50 srv-web01 sshd[1646]: Failed password for invalid user oracle from 198.51.100.213 port 59044 ssh2
+Oct 12 06:00:53 srv-web01 sshd[1606]: Invalid user postgres from 198.51.100.213 port 56875
+Oct 12 06:00:53 srv-web01 sshd[1606]: Failed password for invalid user postgres from 198.51.100.213 port 56875 ssh2
+Oct 12 06:01:03 srv-web01 sshd[1644]: Invalid user postgres from 198.51.100.213 port 45429
+Oct 12 06:01:03 srv-web01 sshd[1644]: Failed password for invalid user postgres from 198.51.100.213 port 45429 ssh2
+Oct 12 06:01:04 srv-web01 sshd[1629]: Invalid user postgres from 198.51.100.213 port 56665
+Oct 12 06:01:04 srv-web01 sshd[1629]: Failed password for invalid user postgres from 198.51.100.213 port 56665 ssh2
+Oct 12 06:01:05 srv-web01 sshd[1666]: Invalid user postgres from 198.51.100.213 port 49188
+Oct 12 09:1
+Oct 12 06:01:05 srv-web01 sshd[1666]: Failed password for invalid user postgres from 198.51.100.213 port 49188 ssh2
+Oct 12 06:01:14 srv-web01 sshd[1638]: Invalid user admin from 198.51.100.213 port 51934
+Oct 12 06:01:14 srv-web01 sshd[1638]: Failed password for invalid user admin from 198.51.100.213 port 51934 ssh2
+Oct 12 06:01:15 srv-web01 sshd[1657]: Failed password for root from 198.51.100.213 port 34208 ssh2
+Oct 12 06:01:19 srv-web01 sshd[1658]: Invalid user admin from 198.51.100.213 port 38645
+Oct 12 06:01:19 srv-web01 sshd[1658]: Failed password for invalid user admin from 198.51.100.213 port 38645 ssh2
+Oct 12 06:01:23 srv-web01 sshd[1636]: Invalid user admin from 198.51.100.213 port 30825
+Oct 12 06:01:23 srv-web01 sshd[1636]: Failed password for invalid user admin from 198.51.100.213 port 30825 ssh2
+Oct 12 06:01:26 srv-web01 sshd[1697]: Failed password for root from 198.51.100.213 port 33196 ssh2
+Oct 12 06:01:29 srv-web01 sshd[1699]: Invalid user oracle from 198.51.100.213 port 42518
+Oct 12 06:01:29 srv-web01 sshd[1699]: Failed password for invalid user oracle from 198.51.100.213 port 42518 ssh2
+Oct 12 06:01:31 srv-web01 sshd[1673]: Invalid user postgres from 198.51.100.213 port 40916
+Oct 12 06:01:31 srv-web01 sshd[1673]: Failed password for invalid user postgres from 198.51.100.213 port 40916 ssh2
+Oct 12 06:01:44 srv-web01 sshd[1665]: Invalid user admin from 198.51.100.213 port 35212
+Oct 12 06:01:44 srv-web01 sshd[1665]: Failed password for invalid user admin from 198.51.100.213 port 35212 ssh2
+Oct 12 06:01:47 srv-web01 sshd[1651]: Invalid user postgres from 198.51.100.213 port 33397
+Oct 12 06:01:47 srv-web01 sshd[1651]: Failed password for invalid user postgres from 198.51.100.213 port 33397 ssh2
+Oct 12 06:01:47 srv-web01 sshd[1689]: Invalid user admin from 198.51.100.213 port 52493
+Oct 12 06:01:47 srv-web01 sshd[1689]: Failed password for invalid user admin from 198.51.100.213 port 52493 ssh2
+Oct 12 06:01:56 srv-web01 sshd[1728]: Invalid user oracle from 198.51.100.213 port 33646
+Oct 12 06:01:56 srv-web01 sshd[1728]: Failed password for invalid user oracle from 198.51.100.213 port 33646 ssh2
+Oct 12 06:02:03 srv-web01 sshd[1704]: Invalid user postgres from 198.51.100.213 port 30599
+Oct 12 06:02:03 srv-web01 sshd[1704]: Failed password for invalid user postgres from 198.51.100.213 port 30599 ssh2
+Oct 12 06:02:07 srv-web01 sshd[1705]: Invalid user oracle from 198.51.100.213 port 36752
+Oct 12 06:02:07 srv-web01 sshd[1705]: Failed password for invalid user oracle from 198.51.100.213 port 36752 ssh2
+Oct 12 06:02:11 srv-web01 sshd[1709]: Failed password for root from 198.51.100.213 port 57443 ssh2
+Oct 12 06:02:19 srv-web01 sshd[1692]: Invalid user oracle from 198.51.100.213 port 60295
+Oct 12 06:02:19 srv-web01 sshd[1692]: Failed password for invalid user oracle from 198.51.100.213 port 60295 ssh2
+Oct 12 06:02:23 srv-web01 sshd[1680]: Invalid user oracle from 198.51.100.213 port 54863
+Oct 12 06:02:23 srv-web01 sshd[1680]: Failed password for invalid user oracle from 198.51.100.213 port 54863 ssh2
+Oct 12 06:02:23 srv-web01 sshd[1719]: Invalid user postgres from 198.51.100.213 port 30914
+Oct 12 06:02:23 srv-web01 sshd[1719]: Failed password for invalid user postgres from 198.51.100.213 port 30914 ssh2
+Oct 12 06:02:29 srv-web01 sshd[1683]: Invalid user oracle from 198.51.100.213 port 50616
+Oct 12 06:02:29 srv-web01 sshd[1683]: Failed password for invalid user oracle from 198.51.100.213 port 50616 ssh2
+Oct 12 06:02:31 srv-web01 sshd[1727]: Invalid user admin from 198.51.100.213 port 40605
+Oct 12 06:02:31 srv-web01 sshd[1727]: Failed password for invalid user admin from 198.51.100.213 port 40605 ssh2
+Oct 12 06:02:35 srv-web01 sshd[1686]: Invalid user oracle from 198.51.100.213 port 52939
+Oct 12 06:02:35 srv-web01 sshd[1686]: Failed password for invalid user oracle from 198.51.100.213 port 52939 ssh2
+Oct 12 06:02:49 srv-web01 sshd[1716]: Invalid user postgres from 198.51.100.213 port 33267
+Oct 12 06:02:49 srv-web01 sshd[1716]: Failed password for invalid user postgres from 198.51.100.213 port 33267 ssh2
+Oct 12 06:03:04 srv-web01 sshd[1725]: Failed password for root from 198.51.100.213 port 47112 ssh2
+Oct 12 06:03:29 srv-web01 sshd[1717]: Invalid user oracle from 198.51.100.213 port 38525
+Oct 12 06:03:29 srv-web01 sshd[1717]: Failed password for invalid user oracle from 198.51.100.213 port 38525 ssh2
+Oct 12 06:03:59 srv-web01 sshd[1730]: Invalid user admin from 198.51.100.213 port 47750
+Oct 12 06:03:59 srv-web01 sshd[1730]: Failed password for invalid user admin from 198.51.100.213 port 47750 ssh2
+Oct 12 06:04:05 srv-web01 sshd[1731]: Invalid user admin from 198.51.100.213 port 36409
+Oct 12 06:04:05 srv-web01 sshd[1731]: Failed password for invalid user admin from 198.51.100.213 port 36409 ssh2
+Oct 12 06:04:11 srv-web01 sshd[1738]: Failed password for root from 198.51.100.213 port 42939 ssh2
+Oct 12 06:04:17 srv-web01 sshd[1742]: Invalid user oracle from 198.51.100.213 port 31514
+Oct 12 06:04:17 srv-web01 sshd[1742]: Failed password for invalid user oracle from 198.51.100.213 port 31514 ssh2
+Oct 12 06:04:23 srv-web01 sshd[1748]: Failed password for root from 198.51.100.213 port 51791 ssh2
+Oct 12 06:04:29 srv-web01 sshd[1749]: Invalid user postgres from 198.51.100.213 port 47808
+Oct 12 06:04:29 srv-web01 sshd[1749]: Failed password for invalid user postgres from 198.51.100.213 port 47808 ssh2
+Oct 12 07:00:00 srv-web01 CRON[1077]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 08:00:00 srv-web01 CRON[1078]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 08:07:42 srv-web01 sshd[1040]: Failed password for carol from 10.0.1.27 port 48192 ssh2
+Oct 12 08:08:05 srv-web01 sshd[1046]: Accepted password for carol from 10.0.1.27 port 53325 ssh2
+Oct 12 08:08:05 srv-web01 sshd[1046]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Oct 12 08:31:14 srv-web01 sshd[1004]: Failed password for alice from 10.0.1.25 port 51676 ssh2
+Oct 12 08:31:27 srv-web01 sshd[1007]: Failed password for alice from 10.0.1.25 port 32259 ssh2
+Oct 12 08:31:40 srv-web01 sshd[1012]: Failed password for alice from 10.0.1.25 port 51218 ssh2
+Oct 12 08:31:42 srv-web01 sshd[1019]: Accepted publickey for alice from 10.0.1.25 port 43764 ssh2
+Oct 12 08:31:42 srv-web01 sshd[1019]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Oct 12 08:41:13 srv-web01 sshd[1051]: Accepted publickey for david from 10.0.1.28 port 53635 ssh2
+Oct 12 08:41:13 srv-web01 sshd[1051]: pam_unix(sshd:session): session opened for user david by (uid=0)
+Oct 12 09:00:00 srv-web01 CRON[1082]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 09:10:05 srv-web01 sudo:    carol : TTY=pts/0 ; PWD=/home/carol ; USER=root ; COMMAND=/usr/bin/systemctl restart apache2
+Oct 12 09:17:02 srv-web01 sshd[1033]: Accepted password for bob from 10.0.1.26 port 54591 ssh2
+Oct 12 09:17:02 srv-web01 sshd[1033]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Oct 12 09:30:13 srv-web01 sshd[1455]: Invalid user oracle from 203.0.113.214 port 39802
+Oct 12 09:30:13 srv-web01 sshd[1455]: Failed password for invalid user oracle from 203.0.113.214 port 39802 ssh2
+Oct 12 09:30:14 srv-web01 sshd[1461]: Connection closed by 203.0.113.214 port 43903 [preauth]
+Oct 12 09:46:02 srv-web01 sudo:    bob : TTY=pts/0 ; PWD=/home/bob ; USER=root ; COMMAND=/usr/bin/systemctl restart apache2
+Oct 12 10:00:00 srv-web01 CRON[1085]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 10:04:27 srv-web01 sshd[1435]: Invalid user ubuntu from 203.0.113.229 port 52384
+Oct 12 10:04:27 srv-web01 sshd[1435]: Failed password for invalid user ubuntu from 203.0.113.229 port 52384 ssh2
+Oct 12 10:04:28 srv-web01 sshd[1437]: Connection closed by 203.0.113.229 port 46307 [preauth]
+Oct 12 11:00:00 srv-web01 CRON[1086]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 11:08:57 srv-web01 sshd[1918]: Failed password for root from 198.51.100.122 port 49535 ssh2
+Oct 12 11:09:00 srv-web01 sshd[1922]: Failed password for root from 198.51.100.122 port 52369 ssh2
+Oct 12 11:09:03 srv-web01 sshd[1923]: Failed password for root from 198.51.100.122 port 34043 ssh2
+Oct 12 11:09:06 srv-web01 sshd[1928]: Failed password for root from 198.51.100.122 port 32265 ssh2
+Oct 12 11:09:09 srv-web01 sshd[1934]: Failed password for root from 198.51.100.122 port 58291 ssh2
+Oct 12 11:09:12 srv-web01 sshd[1937]: Failed password for root from 198.51.100.122 port 48305 ssh2
+Oct 12 11:09:15 srv-web01 sshd[1942]: Failed password for root from 198.51.100.122 port 33271 ssh2
+Oct 12 11:09:18 srv-web01 sshd[1944]: Failed password for root from 198.51.100.122 port 43012 ssh2
+Oct 12 11:09:21 srv-web01 sshd[1949]: Failed password for root from 198.51.100.122 port 34659 ssh2
+Oct 12 12:00:00 srv-web01 CRON[1093]: pam_unix(cron:session): session opened for user root by (uid=0)
+    corrupted entry
+Oct 12 12:18:02 srv-web01 sudo:    bob : TTY=pts/0 ; PWD=/home/bob ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 12 12:27:42 srv-web01 sudo:    alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/systemctl restart apache2
+Oct 12 12:46:02 srv-web01 sudo:    bob : TTY=pts/0 ; PWD=/home/bob ; USER=root ; COMMAND=/usr/bin/systemctl restart apache2
+Oct 12 13:00:00 srv-web01 CRON[1100]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 13:30:13 srv-web01 sudo:    david : TTY=pts/0 ; PWD=/home/david ; USER=root ; COMMAND=/usr/bin/tail -n 50 /var/log/syslog
+Oct 12 14:00:00 srv-web01 CRON[1104]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 14:10:05 srv-web01 sshd[1953]: Failed password for root from 198.51.100.122 port 30353 ssh2
+Oct 12 14:10:08 srv-web01 sshd[1957]: Failed password for root from 198.51.100.122 port 39085 ssh2
+Oct 12 14:10:11 srv-web01 sshd[1959]: Failed password for root from 198.51.100.122 port 33862 ssh2
+Oct 12 14:10:14 srv-web01 sshd[1962]: Failed password for root from 198.51.100.122 port 60221 ssh2
+Oct 12 14:10:17 srv-web01 sshd[1964]: Failed password for root from 198.51.100.122 port 32194 ssh2
+Oct 12 14:10:20 srv-web01 sshd[1969]: Failed password for root from 198.51.100.122 port 38158 ssh2
+Oct 12 14:10:23 srv-web01 sshd[1975]: Failed password for root from 198.51.100.122 port 59534 ssh2
+Oct 12 14:10:26 srv-web01 sshd[1979]: Failed password for root from 198.51.100.122 port 53875 ssh2
+Oct 12 14:10:29 srv-web01 sshd[1981]: Failed password for root from 198.51.100.122 port 55590 ssh2
+Oct 12 14:10:32 srv-web01 sshd[1988]: Failed password for root from 198.51.100.122 port 41171 ssh2
+Oct 12 14:10:35 srv-web01 sshd[1990]: Failed password for root from 198.51.100.122 port 43157 ssh2
+Oct 12 14:10:38 srv-web01 sshd[1997]: Failed password for root from 198.51.100.122 port 30112 ssh2
+Oct 12 14:10:41 srv-web01 sshd[1999]: Failed password for root from 198.51.100.122 port 35709 ssh2
+Oct 12 14:10:44 srv-web01 sshd[2000]: Failed password for root from 198.51.100.122 port 43875 ssh2
+Oct 12 15:00:00 srv-web01 CRON[1110]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 15:07:18 srv-web01 sshd[1350]: Invalid user ubuntu from 198.51.100.181 port 60613
+Oct 12 15:07:18 srv-web01 sshd[1350]: Failed password for invalid user ubuntu from 198.51.100.181 port 60613 ssh2
+Oct 12 15:07:19 srv-web01 sshd[1357]: Connection closed by 198.51.100.181 port 46637 [preauth]
+Oct 12 15:26:05 srv-web01 sshd[1362]: Invalid user pi from 192.0.2.34 port 51624
+Oct 12 15:26:05 srv-web01 sshd[1362]: Failed password for invalid user pi from 192.0.2.34 port 51624 ssh2
+Oct 12 15:26:06 srv-web01 sshd[1366]: Connection closed by 192.0.2.34 port 58352 [preauth]
+Oct 12 15:56:05 srv-web01 sshd[1426]: Invalid user test from 192.0.2.205 port 47405
+Oct 12 15:56:05 srv-web01 sshd[1426]: Failed password for invalid user test from 192.0.2.205 port 47405 ssh2
+Oct 12 15:56:06 srv-web01 sshd[1430]: Connection closed by 192.0.2.205 port 48544 [preauth]
+Oct 12 16:00:00 srv-web01 CRON[1112]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 17:00:00 srv-web01 CRON[1117]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 18:00:00 srv-web01 CRON[1118]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 18:31:41 srv-web01 sshd[1284]: Invalid user admin from 192.0.2.252 port 35269
+Oct 12 18:31:41 srv-web01 sshd[1284]: Failed password for invalid user admin from 192.0.2.252 port 35269 ssh2
+Oct 12 18:31:42 srv-web01 sshd[1287]: Connection closed by 192.0.2.252 port 43488 [preauth]
+Oct 12 19:00:00 srv-web01 CRON[1119]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 20:00:00 srv-web01 CRON[1123]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 20:20:19 srv-web01 sshd[1384]: Invalid user test from 192.0.2.225 port 31213
+Oct 12 20:20:19 srv-web01 sshd[1384]: Failed password for invalid user test from 192.0.2.225 port 31213 ssh2
+Oct 12 20:20:20 srv-web01 sshd[1386]: Connection closed by 192.0.2.225 port 46459 [preauth]
+Oct 12 21:00:00 srv-web01 CRON[1130]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 22:00:00 srv-web01 CRON[1137]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 23:00:00 srv-web01 CRON[1141]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 23:41:50 srv-web01 sshd[1341]: Invalid user test from 203.0.113.100 port 46654
+Oct 12 23:41:50 srv-web01 sshd[1341]: Failed password for invalid user test from 203.0.113.100 port 46654 ssh2
+Oct 12 23:41:51 srv-web01 sshd[1347]: Connection closed by 203.0.113.100 port 58813 [preauth]
+Oct 12 23:54:16 srv-web01 sshd[1443]: Invalid user oracle from 203.0.113.161 port 30307
+Oct 12 23:54:16 srv-web01 sshd[1443]: Failed password for invalid user oracle from 203.0.113.161 port 30307 ssh2
+Oct 12 23:54:17 srv-web01 sshd[1450]: Connection closed by 203.0.113.161 port 45245 [preauth]
+Oct 13 00:00:00 srv-web01 CRON[1144]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 01:00:00 srv-web01 CRON[1148]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 01:00:22 srv-web01 sshd[1370]: Invalid user pi from 192.0.2.32 port 44920
+Oct 13 01:00:22 srv-web01 sshd[1370]: Failed password for invalid user pi from 192.0.2.32 port 44920 ssh2
+Oct 13 01:00:23 srv-web01 sshd[1373]: Connection closed by 192.0.2.32 port 58495 [preauth]
+Oct 13 02:00:00 srv-web01 CRON[1153]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 03:00:00 srv-web01 CRON[1159]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 03:14:14 srv-web01 sshd[1753]: Failed password for deploy from 203.0.113.146 port 34731 ssh2
+Oct 13 03:14:18 srv-web01 sshd[1759]: Failed password for deploy from 203.0.113.146 port 49782 ssh2
+Oct 13 03:14:22 srv-web01 sshd[1762]: Failed password for deploy from 203.0.113.146 port 30084 ssh2
+Oct 13 03:14:26 srv-web01 sshd[1766]: Failed password for deploy from 203.0.113.146 port 43797 ssh2
+Oct 13 03:14:30 srv-web01 sshd[1772]: Failed password for deploy from 203.0.113.146 port 45819 ssh2
+Oct 13 03:14:34 srv-web01 sshd[1778]: Failed password for deploy from 203.0.113.146 port 57470 ssh2
+Oct 13 03:14:38 srv-web01 sshd[1779]: Failed password for deploy from 203.0.113.146 port 50857 ssh2
+Oct 13 03:14:42 srv-web01 sshd[1783]: Failed password for deploy from 203.0.113.146 port 36079 ssh2
+Oct 13 03:14:46 srv-web01 sshd[1784]: Failed password for deploy from 203.0.113.146 port 46350 ssh2
+Oct 13 03:14:50 srv-web01 sshd[1786]: Failed password for deploy from 203.0.113.146 port 31369 ssh2
+Oct 13 03:14:54 srv-web01 sshd[1789]: Failed password for deploy from 203.0.113.146 port 47878 ssh2
+Oct 13 03:14:58 srv-web01 sshd[1794]: Failed password for deploy from 203.0.113.146 port 57707 ssh2
+Oct 13 03:15:02 srv-web01 sshd[1799]: Failed password for deploy from 203.0.113.146 port 42935 ssh2
+Oct 13 03:15:06 srv-web01 sshd[1804]: Failed password for deploy from 203.0.113.146 port 31616 ssh2
+Oct 13 03:15:10 srv-web01 sshd[1810]: Failed password for deploy from 203.0.113.146 port 39823 ssh2
+Oct 13 03:15:14 srv-web01 sshd[1811]: Failed password for deploy from 203.0.113.146 port 46416 ssh2
+Oct 13 03:15:18 srv-web01 sshd[1815]: Failed password for deploy from 203.0.113.146 port 56670 ssh2
+Oct 13 03:15:22 srv-web01 sshd[1820]: Failed password for deploy from 203.0.113.146 port 37286 ssh2
+Oct 13 03:15:26 srv-web01 sshd[1821]: Failed password for deploy from 203.0.113.146 port 37411 ssh2
+Oct 13 03:15:30 srv-web01 sshd[1828]: Failed password for deploy from 203.0.113.146 port 51996 ssh2
+Oct 13 03:15:34 srv-web01 sshd[1830]: Failed password for deploy from 203.0.113.146 port 42685 ssh2
+Oct 13 03:15:38 srv-web01 sshd[1837]: Failed password for deploy from 203.0.113.146 port 39744 ssh2
+Oct 13 03:15:42 srv-web01 sshd[1843]: Failed password for deploy from 203.0.113.146 port 40764 ssh2
+Oct 13 03:15:46 srv-web01 sshd[1850]: Failed password for deploy from 203.0.113.146 port 43127 ssh2
+Oct 13 03:15:50 srv-web01 sshd[1853]: Failed password for deploy from 203.0.113.146 port 50144 ssh2
+Oct 13 03:15:54 srv-web01 sshd[1857]: Failed password for deploy from 203.0.113.146 port 45311 ssh2
+Oct 13 03:15:58 srv-web01 sshd[1860]: Failed password for deploy from 203.0.113.146 port 33577 ssh2
+Oct 13 03:16:02 srv-web01 sshd[1865]: Failed password for deploy from 203.0.113.146 port 50082 ssh2
+Oct 13 03:16:06 srv-web01 sshd[1866]: Failed password for deploy from 203.0.113.146 port 43149 ssh2
+Oct 13 03:16:10 srv-web01 sshd[1867]: Failed password for deploy from 203.0.113.146 port 40580 ssh2
+Oct 13 03:16:14 srv-web01 sshd[1873]: Failed password for deploy from 203.0.113.146 port 59694 ssh2
+Oct 13 03:16:18 srv-web01 sshd[1879]: Failed password for deploy from 203.0.113.146 port 54665 ssh2
+Oct 13 03:16:22 srv-web01 sshd[1881]: Failed password for deploy from 203.0.113.146 port 49963 ssh2
+Oct 13 03:16:26 srv-web01 sshd[1887]: Failed password for deploy from 203.0.113.146 port 30669 ssh2
+Oct 13 03:16:30 srv-web01 sshd[1891]: Failed password for deploy from 203.0.113.146 port 55710 ssh2
+Oct 13 03:16:34 srv-web01 sshd[1894]: Failed password for deploy from 203.0.113.146 port 56086 ssh2
+Oct 13 03:16:38 srv-web01 sshd[1901]: Failed password for deploy from 203.0.113.146 port 48649 ssh2
+Oct 13 03:16:42 srv-web01 sshd[1902]: Failed password for deploy from 203.0.113.146 port 48499 ssh2
+Oct 13 03:16:46 srv-web01 sshd[1908]: Failed password for deploy from 203.0.113.146 port 53253 ssh2
+Oct 13 03:21:02 srv-web01 sshd[1912]: Accepted password for deploy from 203.0.113.146 port 51141 ssh2
+Oct 13 03:21:02 srv-web01 sshd[1912]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+Oct 13 03:22:32 srv-web01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Oct 13 03:23:47 srv-web01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/sbin/useradd -m support2
+Oct 13 03:25:02 srv-web01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/crontab -l
+Oct 13 04:00:00 srv-web01 CRON[1166]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 04:05:16 srv-web01 sshd[1321]: Invalid user ubuntu from 203.0.113.188 port 45883
+Oct 13 04:05:16 srv-web01 sshd[1321]: Failed password for invalid user ubuntu from 203.0.113.188 port 45883 ssh2
+Oct 13 04:05:17 srv-web01 sshd[1322]: Connection closed by 203.0.113.188 port 30945 [preauth]
+Oct 13 05:00:00 srv-web01 CRON[1168]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 05:09:37 srv-web01 sshd[1374]: Invalid user ubuntu from 192.0.2.97 port 40426
+Oct 13 05:09:37 srv-web01 sshd[1374]: Failed password for invalid user ubuntu from 192.0.2.97 port 40426 ssh2
+Oct 13 05:09:38 srv-web01 sshd[1380]: Connection closed by 192.0.2.97 port 45498 [preauth]
+Oct 13 05:18:12 srv-web01 sshd[1470]: Invalid user oracle from 198.51.100.178 port 57198
+Oct 13 05:18:12 srv-web01 sshd[1470]: Failed password for invalid user oracle from 198.51.100.178 port 57198 ssh2
+Oct 13 05:18:13 srv-web01 sshd[1476]: Connection closed by 198.51.100.178 port 42969 [preauth]
+Oct 13 06:00:00 srv-web01 CRON[1169]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 07:00:00 srv-web01 CRON[1171]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 08:00:00 srv-web01 CRON[1173]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 08:17:09 srv-web01 sshd[1057]: Accepted password for david from 10.0.1.28 port 49319 ssh2
+Oct 13 08:17:09 srv-web01 sshd[1057]: pam_unix(sshd:session): session opened for user david by (uid=0)
+Oct 13 08:20:20 srv-web01 sshd[1050]: Accepted password for carol from 10.0.1.27 port 48136 ssh2
+Oct 13 08:20:20 srv-web01 sshd[1050]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Oct 13 08:29:28 srv-web01 sshd[1490]: Invalid user backup from 203.0.113.211 port 41445
+Oct 13 08:29:28 srv-web01 sshd[1490]: Failed password for invalid user backup from 203.0.113.211 port 41445 ssh2
+Oct 13 08:29:58 srv-web01 sshd[1496]: Invalid user backup from 203.0.113.211 port 40464
+Oct 13 08:29:58 srv-web01 sshd[1496]: Failed password for invalid user backup from 203.0.113.211 port 40464 ssh2
+Oct 13 08:30:28 srv-web01 sshd[1501]: Invalid user backup from 203.0.113.211 port 41142
+Oct 13 08:30:28 srv-web01 sshd[1501]: Failed password for invalid user backup from 203.0.113.211 port 41142 ssh2
+Oct 13 08:30:58 srv-web01 sshd[1502]: Invalid user backup from 203.0.113.211 port 46980
+Oct 13 08:30:58 srv-web01 sshd[1502]: Failed password for invalid user backup from 203.0.113.211 port 46980 ssh2
+Oct 13 08:31:28 srv-web01 sshd[1508]: Invalid user backup from 203.0.113.211 port 37102
+Oct 13 08:31:28 srv-web01 sshd[1508]: Failed password for invalid user backup from 203.0.113.211 port 37102 ssh2
+Oct 13 08:31:58 srv-web01 sshd[1512]: Invalid user backup from 203.0.113.211 port 60763
+Oct 13 08:31:58 srv-web01 sshd[1512]: Failed password for invalid user backup from 203.0.113.211 port 60763 ssh2
+Oct 13 08:32:28 srv-web01 sshd[1515]: Invalid user backup from 203.0.113.211 port 42217
+Oct 13 08:32:28 srv-web01 sshd[1515]: Failed password for invalid user backup from 203.0.113.211 port 42217 ssh2
+Oct 13 08:32:58 srv-web01 sshd[1521]: Invalid user backup from 203.0.113.211 port 55119
+Oct 13 08:32:58 srv-web01 sshd[1521]: Failed password for invalid user backup from 203.0.113.211 port 55119 ssh2
+Oct 13 08:33:28 srv-web01 sshd[1525]: Invalid user backup from 203.0.113.211 port 31215
+Oct 13 08:33:28 srv-web01 sshd[1525]: Failed password for invalid user backup from 203.0.113.211 port 31215 ssh2
+Oct 13 08:33:58 srv-web01 sshd[1526]: Invalid user backup from 203.0.113.211 port 45121
+Oct 13 08:33:58 srv-web01 sshd[1526]: Failed password for invalid user backup from 203.0.113.211 port 45121 ssh2
+Oct 13 08:34:28 srv-web01 sshd[1527]: Invalid user backup from 203.0.113.211 port 36257
+Oct 13 08:34:28 srv-web01 sshd[1527]: Failed password for invalid user backup from 203.0.113.211 port 36257 ssh2
+Oct 13 08:34:58 srv-web01 sshd[1532]: Invalid user backup from 203.0.113.211 port 57021
+Oct 13 08:34:58 srv-web01 sshd[1532]: Failed password for invalid user backup from 203.0.113.211 port 57021 ssh2
+Oct 13 08:35:28 srv-web01 sshd[1536]: Invalid user backup from 203.0.113.211 port 33302
+Oct 13 08:35:28 srv-web01 sshd[1536]: Failed password for invalid user backup from 203.0.113.211 port 33302 ssh2
+Oct 13 08:35:58 srv-web01 sshd[1537]: Invalid user backup from 203.0.113.211 port 32550
+Oct 13 08:35:58 srv-web01 sshd[1537]: Failed password for invalid user backup from 203.0.113.211 port 32550 ssh2
+Oct 13 08:36:28 srv-web01 sshd[1541]: Invalid user backup from 203.0.113.211 port 41401
+Oct 13 08:36:28 srv-web01 sshd[1541]: Failed password for invalid user backup from 203.0.113.211 port 41401 ssh2
+Oct 13 08:36:58 srv-web01 sshd[1546]: Invalid user backup from 203.0.113.211 port 52210
+Oct 13 08:36:58 srv-web01 sshd[1546]: Failed password for invalid user backup from 203.0.113.211 port 52210 ssh2
+Oct 13 08:37:28 srv-web01 sshd[1547]: Invalid user backup from 203.0.113.211 port 51595
+Oct 13 08:37:28 srv-web01 sshd[1547]: Failed password for invalid user backup from 203.0.113.211 port 51595 ssh2
+Oct 13 08:37:58 srv-web01 sshd[1554]: Invalid user backup from 203.0.113.211 port 31288
+Oct 13 08:37:58 srv-web01 sshd[1554]: Failed password for invalid user backup from 203.0.113.211 port 31288 ssh2
+Oct 13 08:38:28 srv-web01 sshd[1561]: Invalid user backup from 203.0.113.211 port 33436
+Oct 13 08:38:28 srv-web01 sshd[1561]: Failed password for invalid user backup from 203.0.113.211 port 33436 ssh2
+Oct 13 08:38:58 srv-web01 sshd[1565]: Invalid user backup from 203.0.113.211 port 54566
+Oct 13 08:38:58 srv-web01 sshd[1565]: Failed password for invalid user backup from 203.0.113.211 port 54566 ssh2
+Oct 13 08:44:15 srv-web01 sshd[1036]: Accepted password for bob from 10.0.1.26 port 58846 ssh2
+Oct 13 08:44:15 srv-web01 sshd[1036]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Oct 13 08:45:58 srv-web01 sshd[1333]: Invalid user oracle from 192.0.2.91 port 53114
+Oct 13 08:45:58 srv-web01 sshd[1333]: Failed password for invalid user oracle from 192.0.2.91 port 53114 ssh2
+Oct 13 08:45:59 srv-web01 sshd[1336]: Connection closed by 192.0.2.91 port 43614 [preauth]
+Oct 13 08:56:48 srv-web01 sshd[1271]: Invalid user test from 198.51.100.30 port 44283
+Oct 13 08:56:48 srv-web01 sshd[1271]: Failed password for invalid user test from 198.51.100.30 port 44283 ssh2
+Oct 13 08:56:49 srv-web01 sshd[1277]: Connection closed by 198.51.100.30 port 56681 [preauth]
+Oct 13 08:57:12 srv-web01 sshd[1025]: Failed password for alice from 10.0.1.25 port 35013 ssh2
+Oct 13 08:57:41 srv-web01 sshd[1031]: Accepted publickey for alice from 10.0.1.25 port 47096 ssh2
+Oct 13 08:57:41 srv-web01 sshd[1031]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Oct 13 09:00:00 srv-web01 CRON[1177]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 09:28:21 srv-web01 sshd[1288]: Invalid user pi from 192.0.2.230 port 44903
+Oct 13 09:28:21 srv-web01 sshd[1288]: Failed password for invalid user pi from 192.0.2.230 port 44903 ssh2
+Oct 13 09:28:22 srv-web01 sshd[1289]: Connection closed by 192.0.2.230 port 40306 [preauth]
+Oct 13 10:00:00 srv-web01 CRON[1181]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 10:11:09 srv-web01 sudo:    david : TTY=pts/0 ; PWD=/home/david ; USER=root ; COMMAND=/usr/bin/systemctl restart apache2
+Oct 13 10:28:09 srv-web01 sudo:    david : TTY=pts/0 ; PWD=/home/david ; USER=root ; COMMAND=/usr/bin/systemctl restart apache2
+Oct 13 10:56:09 srv-web01 sudo:    david : TTY=pts/0 ; PWD=/home/david ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 13 11:00:00 srv-web01 CRON[1183]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 11:14:14 srv-web01 sshd[1243]: Invalid user pi from 203.0.113.150 port 46180
+Oct 13 11:14:14 srv-web01 sshd[1243]: Failed password for invalid user pi from 203.0.113.150 port 46180 ssh2
+Oct 13 11:14:15 srv-web01 sshd[1247]: Connection closed by 203.0.113.150 port 32635 [preauth]
+Oct 13 11:26:05 srv-web01 sshd[1423]: Invalid user test from 203.0.113.70 port 39812
+Oct 13 11:26:05 srv-web01 sshd[1423]: Failed password for invalid user test from 203.0.113.70 port 39812 ssh2
+Oct 13 11:26:06 srv-web01 sshd[1424]: Connection closed by 203.0.113.70 port 31507 [preauth]
+Oct 13 11:29:41 srv-web01 sudo:    alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/systemctl restart apache2
+Oct 13 11:35:20 srv-web01 sudo:    carol : TTY=pts/0 ; PWD=/home/carol ; USER=root ; COMMAND=/usr/bin/tail -n 50 /var/log/syslog
+Oct 13 11:42:52 srv-web01 sshd[1327]: Invalid user admin from 203.0.113.54 port 43369
+Oct 13 11:42:52 srv-web01 sshd[1327]: Failed password for invalid user admin from 203.0.113.54 port 43369 ssh2
+Oct 13 11:42:53 srv-web01 sshd[1328]: Connection closed by 203.0.113.54 port 37362 [preauth]
+Oct 13 12:00:00 srv-web01 CRON[1186]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 12:53:25 srv-web01 sshd[1248]: Invalid user admin from 192.0.2.116 port 37501
+Oct 13 12:53:25 srv-web01 sshd[1248]: Failed password for invalid user admin from 192.0.2.116 port 37501 ssh2
+Oct 13 12:53:26 srv-web01 sshd[1254]: Connection closed by 192.0.2.116 port 57392 [preauth]
+Oct 13 13:00:00 srv-web01 CRON[1190]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 13:10:41 srv-web01 sudo:    alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/systemctl restart apache2
+Oct 13 13:16:20 srv-web01 sudo:    carol : TTY=pts/0 ; PWD=/home/carol ; USER=root ; COMMAND=/usr/bin/systemctl restart apache2
+Oct 13 13:23:15 srv-web01 sudo:    bob : TTY=pts/0 ; PWD=/home/bob ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 13 13:43:15 srv-web01 sudo:    bob : TTY=pts/0 ; PWD=/home/bob ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 13 13:47:41 srv-web01 sudo:    alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/systemctl restart apache2
+Oct 13 14:00:00 srv-web01 CRON[1192]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 15:00:00 srv-web01 CRON[1199]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 16:00:00 srv-web01 CRON[1204]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 17:00:00 srv-web01 CRON[1206]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 18:00:00 srv-web01 CRON[1211]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 18:09:06 srv-web01 sshd[1468]: Invalid user ubuntu from 203.0.113.245 port 45833
+Oct 13 18:09:06 srv-web01 sshd[1468]: Failed password for invalid user ubuntu from 203.0.113.245 port 45833 ssh2
+Oct 13 18:09:07 srv-web01 sshd[1469]: Connection closed by 203.0.113.245 port 37772 [preauth]
+Oct 13 18:29:10 srv-web01 sshd[1408]: Invalid user ubuntu from 203.0.113.112 port 50538
+Oct 13 18:29:10 srv-web01 sshd[1408]: Failed password for invalid user ubuntu from 203.0.113.112 port 50538 ssh2
+Oct 13 18:29:11 srv-web01 sshd[1414]: Connection closed by 203.0.113.112 port 59079 [preauth]
+Oct 13 19:00:00 srv-web01 CRON[1213]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 19:05:26 srv-web01 sshd[1481]: Invalid user admin from 192.0.2.227 port 54417
+Oct 13 19:05:26 srv-web01 sshd[1481]: Failed password for invalid user admin from 192.0.2.227 port 54417 ssh2
+Oct 13 19:05:27 srv-web01 sshd[1485]: Connection closed by 192.0.2.227 port 57290 [preauth]
+Oct 13 19:31:26 srv-web01 sshd[1390]: Invalid user pi from 192.0.2.240 port 30502
+Oct 13 19:31:26 srv-web01 sshd[1390]: Failed password for invalid user pi from 192.0.2.240 port 30502 ssh2
+Oct 13 19:31:27 srv-web01 sshd[1396]: Connection closed by 192.0.2.240 port 34723 [preauth]
+Oct 13 20:00:00 srv-web01 CRON[1220]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 21:00:00 srv-web01 CRON[1221]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 22:00:00 srv-web01 CRON[1224]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 13 23:00:00 srv-web01 CRON[1231]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 14 00:00:00 srv-web01 CRON[1234]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 14 00:04:22 srv-web01 sshd[1399]: Invalid user oracle from 203.0.113.13 port 50422
+Oct 14 00:04:22 srv-web01 sshd[1399]: Failed password for invalid user oracle from 203.0.113.13 port 50422 ssh2
+Oct 14 00:04:23 srv-web01 sshd[1405]: Connection closed by 203.0.113.13 port 43024 [preauth]
+Oct 14 00:05:01 srv-web01 sshd[1296]: Invalid user pi from 192.0.2.144 port 30037
+Oct 14 00:05:01 srv-web01 sshd[1296]: Failed password for invalid user pi from 192.0.2.144 port 30037 ssh2
+Oct 14 00:05:02 srv-web01 sshd[1302]: Connection closed by 192.0.2.144 port 58487 [preauth]
+Oct 14 01:00:00 srv-web01 CRON[1238]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 14 01:28:46 srv-web01 sshd[1259]: Invalid user oracle from 192.0.2.27 port 31318
+#### log rotated ####
+Oct 14 01:28:46 srv-web01 sshd[1259]: Failed password for invalid user oracle from 192.0.2.27 port 31318 ssh2
+Oct 14 01:28:47 srv-web01 sshd[1266]: Connection closed by 192.0.2.27 port 54781 [preauth]

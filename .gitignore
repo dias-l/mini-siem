@@ -1,0 +1,24 @@
+# Environnements virtuels
+.venv/
+venv/
+env/
+
+# Base de données SQLite (ne pas livrer — L1)
+*.db
+*.sqlite
+*.sqlite3
+
+# Sortie générée
+output/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
