@@ -48,7 +48,13 @@ La configuration (seuils, fenêtres, signatures, liste blanche) se trouve dans
 ## Tests
 
 ```bash
-pytest
+pytest          # 50 tests (analyseurs, stockage, règles, corrélation, dashboard)
+```
+
+## Analyse de sensibilité des seuils
+
+```bash
+python scripts/analyse_seuils.py   # effet des seuils R1/R2/R4 (section 6 du rapport)
 ```
 
 ## Structure
@@ -62,4 +68,6 @@ pytest
 | `siem/detection/`      | Règles R1–R5 et corrélations C1–C2                 |
 | `siem/export.py`       | Export JSON des alertes                            |
 | `siem/dashboard/`      | Application web Flask                              |
+| `scripts/`             | Utilitaires (analyse de sensibilité des seuils)    |
+| `docs/rapport_technique.md` | Rapport technique (à convertir en PDF)        |
 | `tests/`               | Tests pytest                                       |
