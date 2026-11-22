@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Mini-SIEM{% endblock %}</title>
+  <style>
+    :root {
+      --bg: #0f172a; --panel: #1e293b; --panel2: #273449;
+      --text: #e2e8f0; --muted: #94a3b8; --accent: #4f8cff; --border: #334155;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg); color: var(--text);
+    }
+    header {
+      background: var(--panel); border-bottom: 1px solid var(--border);
+      padding: 16px 24px; display: flex; align-items: center; gap: 24px;
+    }
+    header h1 { font-size: 18px; margin: 0; }
+    nav a {
+      color: var(--muted); text-decoration: none; margin-right: 16px; font-size: 14px;
+    }
+    nav a:hover, nav a.active { color: var(--accent); }
+    main { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .05em;
+         color: var(--muted); margin: 28px 0 12px; }
+    .panel { background: var(--panel); border: 1px solid var(--border);
+             border-radius: 10px; padding: 20px; }
+    .grid { display: grid; gap: 16px; }
+    .tiles { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+    .tile { background: var(--panel); border: 1px solid var(--border);
+            border-radius: 10px; padding: 18px 20px; }
+    .tile .value { font-size: 30px; font-weight: 700; }
+    .tile .label { color: var(--muted); font-size: 13px; margin-top: 4px; }
+    .bars { display: flex; flex-direction: column; gap: 10px; }
+    .bar-row { display: grid; grid-template-columns: 110px 1fr 48px; align-items: center; gap: 10px; }
+    .bar-row .name { font-size: 13px; color: var(--muted); }
+    .bar-track { background: var(--panel2); border-radius: 6px; height: 22px; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 6px; min-width: 2px; }
+    .bar-row .num { font-size: 13px; text-align: right; font-variant-numeric: tabular-nums; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--border); }
+    th { color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 11px; }
+    td { font-variant-numeric: tabular-nums; }
+    tr:hover td { background: var(--panel2); }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 999px;
+             font-size: 11px; font-weight: 700; color: #fff; }
+    .sev-LOW { background: #6b7280; } .sev-MEDIUM { background: #d97706; }
+    .sev-HIGH { background: #dc2626; } .sev-CRITICAL { background: #9333ea; }
+    form.filters { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; margin-bottom: 16px; }
+    form.filters label { display: flex; flex-direction: column; font-size: 12px; color: var(--muted); gap: 4px; }
+    form.filters input, form.filters select {
+      background: var(--panel2); color: var(--text); border: 1px solid var(--border);
+      border-radius: 6px; padding: 7px 10px; font-size: 13px; }
+    form.filters button {
+      background: var(--accent); color: #fff; border: 0; border-radius: 6px;
+      padding: 8px 16px; font-size: 13px; cursor: pointer; }
+    .muted { color: var(--muted); }
+    code { background: var(--panel2); padding: 1px 6px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🛡️ Mini-SIEM</h1>
+    <nav>
+      <a href="/" class="{{ 'active' if active == 'home' }}">Accueil</a>
+      <a href="/alerts" class="{{ 'active' if active == 'alerts' }}">Alertes</a>
+      <a href="/api/alerts">API JSON</a>
+    </nav>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

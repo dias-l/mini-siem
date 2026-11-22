@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% set active = "home" %}
+{% block title %}Mini-SIEM — Accueil{% endblock %}
+
+{% block content %}
+  <div class="grid tiles">
+    <div class="tile">
+      <div class="value">{{ total_events }}</div>
+      <div class="label">Événements normalisés</div>
+    </div>
+    <div class="tile">
+      <div class="value">{{ total_alerts }}</div>
+      <div class="label">Alertes</div>
+    </div>
+  </div>
+
+  <h2>Volumes par source</h2>
+  <div class="panel">
+    <div class="bars">
+      {% for bar in source_bars %}
+        <div class="bar-row">
+          <span class="name">{{ bar.label }}</span>
+          <span class="bar-track">
+            <span class="bar-fill" style="width: {{ bar.pct }}%; background: {{ bar.color }};"></span>
+          </span>
+          <span class="num">{{ bar.count }}</span>
+        </div>
+      {% else %}
+        <p class="muted">Aucun événement. Lancez <code>python main.py ingest</code>.</p>
+      {% endfor %}
+    </div>
+  </div>
+
+  <h2>Alertes par sévérité</h2>
+  <div class="panel">
+    <div class="bars">
+      {% for bar in severity_bars %}
+        <div class="bar-row">
+          <span class="name">{{ bar.label }}</span>
+          <span class="bar-track">
+            <span class="bar-fill" style="width: {{ bar.pct }}%; background: {{ bar.color }};"></span>
+          </span>
+          <span class="num">{{ bar.count }}</span>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

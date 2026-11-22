@@ -86,7 +86,12 @@ def cmd_run(config: Config) -> None:
 
 
 def cmd_dashboard(config: Config) -> None:
-    print("[dashboard] à implémenter au Lot 4.")
+    from siem.dashboard.app import create_app
+
+    app = create_app(config)
+    print("Tableau de bord sur http://127.0.0.1:5000  (Ctrl+C pour arrêter)")
+    # NF5 : écoute locale uniquement, mode debug désactivé.
+    app.run(host="127.0.0.1", port=5000, debug=False)
 
 
 def main() -> None:

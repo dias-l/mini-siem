@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% set active = "alerts" %}
+{% block title %}Mini-SIEM — Alertes{% endblock %}
+
+{% block content %}
+  <h2>Alertes ({{ alerts|length }})</h2>
+
+  <form class="filters" method="get" action="/alerts">
+    <label>Sévérité
+      <select name="severity">
+        <option value="">Toutes</option>
+        {% for s in severities %}
+          <option value="{{ s }}" {{ 'selected' if filters.severity == s }}>{{ s }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>Règle
+      <input type="text" name="rule_id" value="{{ filters.rule_id }}" placeholder="R1, C1...">
+    </label>
+    <label>IP source
+      <input type="text" name="src_ip" value="{{ filters.src_ip }}" placeholder="203.0.113.45">
+    </label>
+    <button type="submit">Filtrer</button>
+  </form>
+
+  <div class="panel">
+    <table>
+      <thead>
+        <tr>
+          <th>Règle</th><th>Sévérité</th><th>IP source</th>
+          <th>Début (UTC)</th><th>Fin (UTC)</th><th>Nb</th>
+          <th>Description</th><th>Catégorie</th><th>Compte</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for a in alerts %}
+          <tr>
+            <td>{{ a.rule_id }}</td>
+            <td><span class="badge sev-{{ a.severity }}">{{ a.severity }}</span></td>
+            <td>{{ a.src_ip if a.src_ip is not none else "" }}</td>
+            <td>{{ a.first_seen }}</td>
+            <td>{{ a.last_seen }}</td>
+            <td>{{ a.event_count }}</td>
+            {# {{ }} échappe automatiquement : les charges XSS des logs sont neutralisées (NF4). #}
+            <td>{{ a.description }}</td>
+            <td>{{ a.category if a.category is not none else "" }}</td>
+            <td>{{ a.user if a.user is not none else "" }}</td>
+          </tr>
+        {% else %}
+          <tr><td colspan="9" class="muted">Aucune alerte pour ces filtres.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}
