@@ -12,6 +12,9 @@ env/
 output/*
 !output/alertes.json
 
+# Rapport PDF : ignoré tant qu'il n'est pas finalisé (L3)
+docs/rapport_technique.pdf
+
 # Cache Python
 __pycache__/
 *.py[cod]
