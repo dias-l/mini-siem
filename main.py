@@ -20,6 +20,8 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
 from siem.config import Config
+from siem.detection import run_detection
+from siem.export import export_alerts
 from siem.models import SourceStats
 from siem.parsers import parse_all
 from siem.storage import Storage
@@ -55,10 +57,36 @@ def cmd_ingest(config: Config) -> None:
           f"({len(events) - inserted} déjà présents) — {total} en base.")
 
 
-def cmd_todo(label: str):
-    def _run(config: Config) -> None:
-        print(f"[{label}] à implémenter dans un prochain lot.")
-    return _run
+def cmd_detect(config: Config) -> None:
+    with Storage(config.path("database")) as store:
+        events = store.get_events()
+        alerts = run_detection(config, events)
+        store.replace_alerts(alerts)
+        by_rule = store.count_alerts_by_rule()
+
+    print(f"{len(alerts)} alertes produites :")
+    for rule_id, n in by_rule.items():
+        print(f"  {rule_id} : {n}")
+
+
+def cmd_report(config: Config) -> None:
+    out = config.path("output")
+    with Storage(config.path("database")) as store:
+        alerts = store.get_alerts()           # triées par first_seen
+    export_alerts(alerts, out)
+    print(f"{len(alerts)} alertes exportées vers {out}")
+
+
+def cmd_run(config: Config) -> None:
+    cmd_ingest(config)
+    print()
+    cmd_detect(config)
+    print()
+    cmd_report(config)
+
+
+def cmd_dashboard(config: Config) -> None:
+    print("[dashboard] à implémenter au Lot 4.")
 
 
 def main() -> None:
@@ -72,10 +100,10 @@ def main() -> None:
 
     commands = {
         "ingest": cmd_ingest,
-        "detect": cmd_todo("detect"),
-        "report": cmd_todo("report"),
-        "run": cmd_todo("run"),
-        "dashboard": cmd_todo("dashboard"),
+        "detect": cmd_detect,
+        "report": cmd_report,
+        "run": cmd_run,
+        "dashboard": cmd_dashboard,
     }
     commands[args.command](config)
 

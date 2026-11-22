@@ -173,11 +173,31 @@ class Storage:
         sql += " ORDER BY first_seen, id"
         return self.conn.execute(sql, params).fetchall()
 
+    def get_alerts(self, **filters) -> list[Alert]:
+        """Alertes (filtrables) reconstruites en objets, triées par first_seen."""
+        return [_row_to_alert(r) for r in self.query_alerts(**filters)]
+
     def count_alerts_by_severity(self) -> dict[str, int]:
         rows = self.conn.execute(
             "SELECT severity, COUNT(*) AS n FROM alerts GROUP BY severity"
         ).fetchall()
         return {r["severity"]: r["n"] for r in rows}
+
+    def count_alerts_by_rule(self) -> dict[str, int]:
+        rows = self.conn.execute(
+            "SELECT rule_id, COUNT(*) AS n FROM alerts GROUP BY rule_id ORDER BY rule_id"
+        ).fetchall()
+        return {r["rule_id"]: r["n"] for r in rows}
+
+
+def _row_to_alert(row: sqlite3.Row) -> Alert:
+    return Alert(
+        rule_id=row["rule_id"], severity=row["severity"], src_ip=row["src_ip"],
+        first_seen=timeutils.parse_firewall_time(row["first_seen"]),
+        last_seen=timeutils.parse_firewall_time(row["last_seen"]),
+        event_count=row["event_count"], description=row["description"],
+        category=row["category"], user=row["user"],
+    )
 
 
 def _row_to_event(row: sqlite3.Row) -> Event:
