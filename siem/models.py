@@ -44,6 +44,21 @@ class Event:
 
 
 @dataclass
+class Alert:
+    """Alerte produite par une règle de détection ou de corrélation (6.5)."""
+
+    rule_id: str                   # R1..R5 ou C1..C3
+    severity: str                  # LOW, MEDIUM, HIGH ou CRITICAL
+    src_ip: Optional[str]
+    first_seen: datetime           # UTC
+    last_seen: datetime            # UTC
+    event_count: int
+    description: str
+    category: Optional[str] = None
+    user: Optional[str] = None
+
+
+@dataclass
 class SourceStats:
     """Compteurs affichés par source pour F1."""
 

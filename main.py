@@ -22,6 +22,7 @@ if hasattr(sys.stdout, "reconfigure"):
 from siem.config import Config
 from siem.models import SourceStats
 from siem.parsers import parse_all
+from siem.storage import Storage
 
 ROOT = Path(__file__).resolve().parent
 
@@ -46,7 +47,12 @@ def cmd_ingest(config: Config) -> None:
     events, stats = parse_all(config)
     print_summary(stats)
     print(f"\n{len(events)} événements normalisés.")
-    # Lot 2 : persistance dans SQLite (idempotente).
+
+    with Storage(config.path("database")) as store:
+        inserted = store.insert_events(events)
+        total = sum(store.count_events_by_source().values())
+    print(f"{inserted} nouveaux événements stockés "
+          f"({len(events) - inserted} déjà présents) — {total} en base.")
 
 
 def cmd_todo(label: str):
