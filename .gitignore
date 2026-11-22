@@ -8,8 +8,9 @@ env/
 *.sqlite
 *.sqlite3
 
-# Sortie générée
-output/
+# Sortie générée (on versionne uniquement le fichier d'alertes, livrable L2)
+output/*
+!output/alertes.json
 
 # Cache Python
 __pycache__/

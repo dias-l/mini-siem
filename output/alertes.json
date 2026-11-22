@@ -1,0 +1,167 @@
+[
+  {
+    "rule_id": "R1",
+    "severity": "HIGH",
+    "src_ip": "198.51.100.213",
+    "first_seen": "2026-10-12T03:59:59Z",
+    "last_seen": "2026-10-12T04:04:29Z",
+    "event_count": 46,
+    "description": "Force brute SSH depuis 198.51.100.213",
+    "category": null,
+    "user": null
+  },
+  {
+    "rule_id": "R5",
+    "severity": "MEDIUM",
+    "src_ip": "198.51.100.213",
+    "first_seen": "2026-10-12T03:59:59Z",
+    "last_seen": "2026-10-12T04:04:29Z",
+    "event_count": 46,
+    "description": "IP malveillante (ssh_bruteforce) : 198.51.100.213",
+    "category": "ssh_bruteforce",
+    "user": null
+  },
+  {
+    "rule_id": "R1",
+    "severity": "HIGH",
+    "src_ip": "198.51.100.122",
+    "first_seen": "2026-10-12T09:08:57Z",
+    "last_seen": "2026-10-12T09:09:21Z",
+    "event_count": 9,
+    "description": "Force brute SSH depuis 198.51.100.122",
+    "category": null,
+    "user": null
+  },
+  {
+    "rule_id": "R1",
+    "severity": "HIGH",
+    "src_ip": "198.51.100.122",
+    "first_seen": "2026-10-12T12:10:05Z",
+    "last_seen": "2026-10-12T12:10:44Z",
+    "event_count": 14,
+    "description": "Force brute SSH depuis 198.51.100.122",
+    "category": null,
+    "user": null
+  },
+  {
+    "rule_id": "R2",
+    "severity": "MEDIUM",
+    "src_ip": "192.0.2.168",
+    "first_seen": "2026-10-12T13:17:08Z",
+    "last_seen": "2026-10-12T13:18:01Z",
+    "event_count": 54,
+    "description": "Scan de ports depuis 192.0.2.168",
+    "category": null,
+    "user": null
+  },
+  {
+    "rule_id": "C2",
+    "severity": "HIGH",
+    "src_ip": "192.0.2.168",
+    "first_seen": "2026-10-12T13:17:08Z",
+    "last_seen": "2026-10-12T13:33:23Z",
+    "event_count": 73,
+    "description": "Chaîne d'attaque (scan de ports puis attaque web) depuis 192.0.2.168",
+    "category": null,
+    "user": null
+  },
+  {
+    "rule_id": "R4",
+    "severity": "MEDIUM",
+    "src_ip": "192.0.2.168",
+    "first_seen": "2026-10-12T13:23:08Z",
+    "last_seen": "2026-10-12T13:23:37Z",
+    "event_count": 30,
+    "description": "Scan web (erreurs 404) depuis 192.0.2.168",
+    "category": null,
+    "user": null
+  },
+  {
+    "rule_id": "R3",
+    "severity": "HIGH",
+    "src_ip": "192.0.2.168",
+    "first_seen": "2026-10-12T13:30:08Z",
+    "last_seen": "2026-10-12T13:30:50Z",
+    "event_count": 15,
+    "description": "Attaque web (sqli) depuis 192.0.2.168",
+    "category": "sqli",
+    "user": null
+  },
+  {
+    "rule_id": "R3",
+    "severity": "HIGH",
+    "src_ip": "192.0.2.168",
+    "first_seen": "2026-10-12T13:33:08Z",
+    "last_seen": "2026-10-12T13:33:23Z",
+    "event_count": 4,
+    "description": "Attaque web (path_traversal) depuis 192.0.2.168",
+    "category": "path_traversal",
+    "user": null
+  },
+  {
+    "rule_id": "R2",
+    "severity": "MEDIUM",
+    "src_ip": "198.51.100.128",
+    "first_seen": "2026-10-12T21:56:35Z",
+    "last_seen": "2026-10-12T21:57:14Z",
+    "event_count": 40,
+    "description": "Scan de ports depuis 198.51.100.128",
+    "category": null,
+    "user": null
+  },
+  {
+    "rule_id": "R1",
+    "severity": "HIGH",
+    "src_ip": "203.0.113.146",
+    "first_seen": "2026-10-13T01:14:14Z",
+    "last_seen": "2026-10-13T01:16:46Z",
+    "event_count": 39,
+    "description": "Force brute SSH depuis 203.0.113.146",
+    "category": null,
+    "user": null
+  },
+  {
+    "rule_id": "C1",
+    "severity": "CRITICAL",
+    "src_ip": "203.0.113.146",
+    "first_seen": "2026-10-13T01:14:14Z",
+    "last_seen": "2026-10-13T01:21:02Z",
+    "event_count": 40,
+    "description": "Compromission probable du compte deploy depuis 203.0.113.146",
+    "category": null,
+    "user": "deploy"
+  },
+  {
+    "rule_id": "R3",
+    "severity": "HIGH",
+    "src_ip": "198.51.100.112",
+    "first_seen": "2026-10-13T09:19:07Z",
+    "last_seen": "2026-10-13T09:40:07Z",
+    "event_count": 4,
+    "description": "Attaque web (xss) depuis 198.51.100.112",
+    "category": "xss",
+    "user": null
+  },
+  {
+    "rule_id": "R3",
+    "severity": "HIGH",
+    "src_ip": "198.51.100.112",
+    "first_seen": "2026-10-13T09:59:07Z",
+    "last_seen": "2026-10-13T09:59:07Z",
+    "event_count": 1,
+    "description": "Attaque web (path_traversal) depuis 198.51.100.112",
+    "category": "path_traversal",
+    "user": null
+  },
+  {
+    "rule_id": "R5",
+    "severity": "MEDIUM",
+    "src_ip": "192.0.2.216",
+    "first_seen": "2026-10-13T16:07:20Z",
+    "last_seen": "2026-10-13T16:22:20Z",
+    "event_count": 6,
+    "description": "IP malveillante (scanner) : 192.0.2.216",
+    "category": "scanner",
+    "user": null
+  }
+]
