@@ -21,7 +21,7 @@
         <div class="bar-row">
           <span class="name">{{ bar.label }}</span>
           <span class="bar-track">
-            <span class="bar-fill" style="width: {{ bar.pct }}%; background: {{ bar.color }};"></span>
+            <span class="bar-fill" style="width: {{ bar.pct }}%; background: {{ bar.color }};{% if bar.count %} min-width: 2px;{% endif %}"></span>
           </span>
           <span class="num">{{ bar.count }}</span>
         </div>
@@ -38,7 +38,7 @@
         <div class="bar-row">
           <span class="name">{{ bar.label }}</span>
           <span class="bar-track">
-            <span class="bar-fill" style="width: {{ bar.pct }}%; background: {{ bar.color }};"></span>
+            <span class="bar-fill" style="width: {{ bar.pct }}%; background: {{ bar.color }};{% if bar.count %} min-width: 2px;{% endif %}"></span>
           </span>
           <span class="num">{{ bar.count }}</span>
         </div>
